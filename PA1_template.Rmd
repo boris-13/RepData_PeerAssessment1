@@ -2,6 +2,7 @@
 title: "Reproducible Research Course Project 1"
 output: 
   html_document: 
+    fig_caption: yes
     keep_md: yes
 ---
 *Boris Romanciuc*

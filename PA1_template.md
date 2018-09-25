@@ -66,7 +66,7 @@ names(info_all_steps) <- c("date", "steps")
 hist(info_all_steps$steps, main = "Total number of steps taken per day", xlab = "Total steps taken per day", col = "darkviolet", ylim = c(0,20), breaks = seq(0,25000, by=2500))
 ```
 
-![](PA1_template_files/figure-html/histogram-1.png)<!-- -->
+![](figure-html/histogram-1.png)<!-- -->
 
 Next we calculate and report the mean and median total number of steps taken per day:
 
@@ -98,7 +98,7 @@ names(avr_daily_info) <- c("interval", "mean")
 plot(avr_daily_info$interval, avr_daily_info$mean, type = "l", col="darkviolet", lwd = 2, xlab="Interval", ylab="Average number of steps", main="Average number of steps per intervals")
 ```
 
-![](PA1_template_files/figure-html/average_daily-1.png)<!-- -->
+![](figure-html/average_daily-1.png)<!-- -->
 
 Next we will check which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps:
 
@@ -145,7 +145,7 @@ Next, we will make a histogram of the total number of steps taken each day and c
 hist(all_steps_imputed$daily_steps, col = "darkviolet", xlab = "Total steps per day", ylim = c(0,30), main = "Total number of steps taken each day (missing data imputed)", breaks = seq(0,25000,by=2500))
 ```
 
-![](PA1_template_files/figure-html/hist_imputed-1.png)<!-- -->
+![](figure-html/hist_imputed-1.png)<!-- -->
 
 Now we calculate again and report the mean and median total number of steps taken per day (with the missing data imputed):
 
@@ -203,7 +203,7 @@ plot<- ggplot(info_by_date, aes(x = interval , y = steps, color = daytype)) +
 print(plot)
 ```
 
-![](PA1_template_files/figure-html/plot_day-1.png)<!-- -->
+![](figure-html/plot_day-1.png)<!-- -->
 
 From the panel plot it looks like the weekday activities arise earlier than the weekends - weekday activities arise around 5~6am and weekend activities arise around 8am. We can also observe that from 10am to 5pm, the weekends have higher activity levels than the weekdays.
 
